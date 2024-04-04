@@ -6,7 +6,7 @@ function App() {
   const [message, setMessage] = useState('');
 
   useEffect(() => {
-    axios.post('http://18.234.60.224:5000/')
+    axios.post('http://18.234.60.224:5000/ip')
       .then(response => {
         setMessage(response.data);
         console.log('response.data :>> ', response.data);
@@ -15,6 +15,7 @@ function App() {
         console.error('Error fetching data:', error);
       });
   }, []);
+  
 
   return (
     <div className="App">
