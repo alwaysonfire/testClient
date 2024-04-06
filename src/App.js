@@ -6,7 +6,7 @@ function App() {
   const [message, setMessage] = useState('');
 
   useEffect(() => {
-    axios.post('http://54.92.151.92/api/test/ip')
+    axios.post('http://54.92.151.92/api/test/isdafgkaks')
       .then(response => {
         setMessage('hello world');
         console.log('response.data :>> ', response.data);
