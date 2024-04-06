@@ -8,7 +8,7 @@ function App() {
   useEffect(() => {
     axios.post('http://54.92.151.92/api/test/ip')
       .then(response => {
-        setMessage(response.data);
+        setMessage('hello world');
         console.log('response.data :>> ', response.data);
       })
       .catch(error => {
